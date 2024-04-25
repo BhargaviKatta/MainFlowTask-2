@@ -1,0 +1,53 @@
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #FF6347; /* Tomato */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .menu-item {
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (min-width: 768px) {
+    header {
+      font-size: 2em;
+    }
+  
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; /* Center items horizontally */
+    }
+  
+    .menu-item {
+      flex: 0 0 calc(33.33% - 20px); /* Adjusting for padding */
+      padding: 0 10px;
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+  
+    .menu-item h3 {
+      font-size: 1.5em;
+    }
+  }
+  
